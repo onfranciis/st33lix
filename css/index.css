@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#body{
+    /* height: 100vh;
+    width: 100vw; */
+    background:linear-gradient(#0c597e, #0c3a65);
+    font-family: arial;
+    color: #fff;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* transform: rotate(90deg); */
+}
+
+.section{
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.top-section{
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 0;
+}
+
+.top-section .sidebar-open{
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    margin: 20px;
+}
+
+.top-section .sidebar-open button{
+    height: 30px;
+    width: 30px;
+    /* background-image: url('../assets/added/burger-btn.svg');
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: 70%;*/
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.top-section .sidebar-open button:hover{
+    height: 35px;
+    width: 35px;
+    margin: -3px 0 0 -3px;
+}
+
+.top-section .coins{
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.top-section .coins .coin-bar{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.338);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 5px ;
+}
+
+.top-section .coin-bar button{
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 0px 7px;
+    margin: 1px 3px;
+}
+
+.top-section .coin-bar button p{
+    color: rgb(0, 197, 197);
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-section{
+    height: fit-content;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    padding: 10px;
+}
+
+.bottom-section .controls{
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    display: flex;
+    /* position: absolute; */
+    margin: 0 0 0 10px;
+}
+
+.bottom-section .controls .control-icon{
+    height: 40px;
+    width: 40px;
+    background-color: #38516A;
+    border-radius: 50%;
+    border: 2px solid #356698;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section .controls .control-icon:hover{
+    border: 4px solid black;
+}
+
+.bottom-section .controls .message_heart{
+    /* background-color: blue; */
+    margin: 55px 5px 0px 0px ;
+}
+
+.bottom-section .controls .message_heart .notification{
+    height: 20px;
+    width: auto;
+    min-width: 18px;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    padding: 2px;
+    margin: -40px 0px 0px -30px ;
+}
+
+.bottom-section .controls .people{
+    /* background-color: green; */
+    margin: 7px 0px 0px -30px ;
+}
+
+.bottom-section .controls .hand{
+    background-color: teal;
+    margin: 0px 5px 0px 5px ;
+}
+
+.bottom-section .controls .shirt{
+    /* background-color: inherit; */
+    margin: 7px -10px 0px 0px ;
+}
+
+.bottom-section .controls .avatar{
+    height: 52px;
+    width: 52px;
+    /* background-color: pink; */
+    margin: 50px 0px 0px -83px ;
+}
+
+.bottom-section .controls .duck{
+    /* background-color: yellow; */
+    margin: 55px 0px 0px 15px ;
+}
+
+.bottom-section .controls .shop{
+    height: 52px;
+    width: 52px;
+    background-color: rgb(131, 78, 126);
+    border-color: rgb(201, 110, 192);
+    margin: 50px 0px 0px 20px ;
+}
+
+.bottom-section .controls .boost{
+    height: 52px;
+    width: 52px;
+    background-color: rgb(96, 46, 107);
+    border-color: rgb(154, 61, 174);
+    margin: 50px 0px 0px 10px ;
+}
+
+.bottom-section .controls .none{
+    background-color: inherit;
+    margin: 0px 0px 0px 0px ;
+}
+
+.bottom-section .chat{
+    width: fit-content;
+    height: fit-content;
+    background-color: #38516A;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-end;
+    overflow: hidden;
+    margin: 5px auto;
+}
+
+.bottom-section .chat .chat-icon{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #38516A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.bottom-section .chat .chat-icon:hover{
+    border: 4px solid black;
+}
+
+.bottom-section .chat .chat-icon2{
+    background-color: #fff;
+    margin-right: -10px;
+    z-index: 2;
+}
+
+.bottom-section .chat .chat-box{
+    width: auto;
+    min-width: 300px;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.bottom-section .extras{
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin: 0px;
+}
+
+
+.bottom-section .extras .extra-icon{
+    height: 52px;
+    width: 52px;
+    background-color: rgb(152, 0, 0);
+    border-radius: 50%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.bottom-section .extras .extra-icon:hover{
+    border: 4px solid black;
+}
+
+.bottom-section .extras .message_heart{
+    background-color: blue;
+    margin: 55px 5px 0px 0px ;
+}
