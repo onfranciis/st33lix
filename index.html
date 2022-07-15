@@ -7,6 +7,10 @@
     <title>Modern UI</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="stylesheet" href="./css/sidebars/skills.css" type="text/css">
+    <link rel="stylesheet" href="./css/sidebars/chat-style.css" type="text/css">
+    <link rel="stylesheet" href="./css/sidebars/chat-history.css" type="text/css">
+    <link rel="stylesheet" href="./css/sidebars/loudness.css" type="text/css">
+    <link rel="stylesheet" href="./css/sidebars/actions.css" type="text/css">
 </head>
 <body>
     <div id="body">
@@ -56,7 +60,7 @@
 
         <div id="bottom-section" class="section bottom-section">
             <div class="controls">
-                <button class="control-icon message_heart">
+                <button class="control-icon message_heart" id="message-icon">
                     <span class="message_heart notification">2</span>
                     <img src="./assets/images/aktif.png" alt="message_heart" height="40px" width="40px">
                 </button>
@@ -65,8 +69,8 @@
                     <img src="./assets/added/group.svg" alt="people" height="25px" width="25px">
                 </button>
                 
-                <button class="control-icon hand">
-                    <img src="./assets/added/back_hand.svg" alt="hand" height="25px" width="25px">
+                <button class="control-icon actions" id="actions-icon">
+                    <img src="./assets/added/back_hand.svg" alt="actions" height="25px" width="25px">
                 </button>
                 
                 <button class="control-icon shirt">
@@ -77,7 +81,7 @@
                     <img src="./assets/images/aktif.png" alt="avatar" height="25px" width="25px">
                 </button>
                 
-                <button class="control-icon duck">
+                <button class="control-icon duck" id="duck-icon" >
                     <img src="./assets/images/aktif.png" alt="duck" height="25px" width="25px">
                 </button>
                 
@@ -93,12 +97,100 @@
 
 
             <div class="chat">
+
+
+
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                    -                                    -->
+                <!-- ----------------------------------------------------------------------- -->
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                           LOUDNESS - SIDEBAR                            -->
+                <!-- ----------------------------------------------------------------------- -->
+                <!-- ----------------------------------------------------------------------- -->
+                <!--                                    -                                    -->
+                <!-- ----------------------------------------------------------------------- -->
+    
+    
+    
+    
+                
+                <div class="loudness sidebar" id="loudness-sidebar">
+                    <button class="close-sidebar" id="close-loudness-sidebar">x</button>
+                    <h2>
+                        LOUDNESS
+                    </h2>
+                    <div class="loudness-sidebar-bars">
+    
+                        <button class="loudness-sidebar-bar">
+                            <div class="loudness-sidebar-bar1">
+    
+                                <div class="loudness-sidebar-bar11 loudness-indicator">
+                                </div>
+    
+                                <div class="loudness-sidebar-bar12 loudness-indicator">
+                                </div>
+    
+                                <div class="loudness-sidebar-bar12 loudness-indicator">
+                                </div>
+    
+                            </div>
+                            <div class="loudness-sidebar-bar2">
+                                <p>
+                                    Whisper
+                                </p>
+                            </div>
+                        </button>
+    
+                        <button class="loudness-sidebar-bar">
+                            <div class="loudness-sidebar-bar1">
+    
+                                <div class="loudness-sidebar-bar11 loudness-indicator">
+                                </div>
+    
+                                <div class="loudness-sidebar-bar11 loudness-indicator">
+                                </div>
+    
+                                <div class="loudness-sidebar-bar12 loudness-indicator">
+                                </div>
+    
+                            </div>
+                            <div class="loudness-sidebar-bar2">
+                                <p>
+                                    Normal
+                                </p>
+                            </div>
+                        </button>
+    
+                        <button class="loudness-sidebar-bar">
+                            <div class="loudness-sidebar-bar1">
+    
+                                <div class="loudness-sidebar-bar11 loudness-indicator">
+                                </div>
+    
+                                <div class="loudness-sidebar-bar11 loudness-indicator">
+                                </div>
+    
+                                <div class="loudness-sidebar-bar11 loudness-indicator">
+                                </div>
+    
+                            </div>
+                            <div class="loudness-sidebar-bar2">
+                                <p>
+                                    Shout
+                                </p>
+                            </div>
+                        </button>
+    
+                    </div>
+    
+    
+                </div>
                 <button class="chat-icon chat-icon1">
                     <img src="./assets/images/aktif.png" alt="shop" height="25px" width="25px">
                 </button>
                 
-                <button class="chat-icon chat-icon2">
-                    <img src="./assets/images/aktif.png" alt="boost" height="25px" width="25px">
+                <button class="chat-icon chat-icon2" id="loudness-icon">
+                    <img src="./assets/images/aktif.png" alt="loudness" height="25px" width="25px">
                 </button>
 
                 <span class="chat-box">
@@ -117,169 +209,378 @@
                 </button>
             </div>
 
-
-            <!-- ----------------------------------------------------------------------- -->
-            <!--                                    -                                    -->
-            <!-- ----------------------------------------------------------------------- -->
-            <!-- ----------------------------------------------------------------------- -->
-            <!--                                SideBars                                 -->
-            <!-- ----------------------------------------------------------------------- -->
-            <!-- ----------------------------------------------------------------------- -->
-            <!--                                    -                                    -->
-            <!-- ----------------------------------------------------------------------- -->
+        </div>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                              END OF BOTTOM                              -->
+        <!-- ----------------------------------------------------------------------- -->
 
 
 
-            <div class="sidebar skills-sidebar">
-                <div class="fade fade-top">
 
-                </div>
-                <button class="close-sidebar">x</button>
-                <h2>
-                    Gary The GlueStick
-                </h2>
-                <div class="skill-profile">
-                    <div class="skill-profile-details">
-                        <div class="skill-profile-details-header">
-                            <p  class="skill-profile-details-header-p1">
-                                I'm owned by
-                            </p>
-                            <p class="skill-profile-details-header-p2">
-                                DudeLooksLikeALady
-                            </p>
-                        </div>
-                        <div class="skill-profile-details-body">
-                            <div class="skill-profile-details-body1">
-                                <p>
-                                    breed:
-                                </p>
-                                <p>
-                                    icelandic
-                                </p>
-                            </div>
-                            <div class="skill-profile-details-body2">
-                                <p>
-                                    age:
-                                </p>
-                                <p>
-                                    445
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./assets/images/hayvan-mobi1.png" alt="creature" height="100px" width="100px">
-                </div>
-
-                <hr class="skill-short1"/>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                    -                                    -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                SideBars                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                    -                                    -->
+        <!-- ----------------------------------------------------------------------- -->
 
 
-                <div class="skill-rating">
-                    <div class="skill-rating1-header">
-                        <p>
-                            Rarity
+
+        <div class="sidebar skills-sidebar" id="skillsSidebar">
+            <div class="fade fade-top">
+
+            </div>
+            <button class="close-sidebar" id="close-skills-sidebar">x</button>
+            <h2>
+                Gary The GlueStick
+            </h2>
+            <div class="skill-profile">
+                <div class="skill-profile-details">
+                    <div class="skill-profile-details-header">
+                        <p  class="skill-profile-details-header-p1">
+                            I'm owned by
+                        </p>
+                        <p class="skill-profile-details-header-p2">
+                            DudeLooksLikeALady
                         </p>
                     </div>
-                    <div class="skill-rating1-body">
-                        <img src="./assets/images/create-group/base/08.gif" alt="Rarity" height="50px" width="50px">
-                        <p>
-                            Super Rare
-                        </p>
-                    </div>
-
-                    <div class="skill-rating2-header">
-                        <p>
-                            Level
-                        </p>
-                    </div>
-                    <div class="skill-rating2-body">
-                        <p class="skill-rating2-body-p1">
-                            20/20
-                        </p>
-                        <p class="skill-rating2-body-p2">
-                            Scratched: 9903
-                        </p>
-                    </div>
-
-                    <div class="skill-rating3">
-                        <p class="skill-rating3-header">
-                            Skills
-                        </p>
-                        <div class="skill-rating3-body skill-rating3-body1 ">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
-                            <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
-                                <span class="skill-rating3-body-bar-span skill-rating3-body1-bar-span "></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-rating3-body skill-rating3-body1 ">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
-                            <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
-                                <span class="skill-rating3-body-bar-span skill-rating3-body2-bar-span "></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-rating3-body skill-rating3-body1 ">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
-                            <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
-                                <span class="skill-rating3-body-bar-span skill-rating3-body3-bar-span "></span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-rating3-body skill-rating3-body1 ">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
-                            <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
-                                <span class="skill-rating3-body-bar-span skill-rating3-body4-bar-span "></span>
-                            </div>
-                        </div>                     
-
-
-
-                    </div>
-
-
-                    <hr class="skill-short2"/>
-
-
-                    <div class="skill-rating4">
-                        <div class="skill-rating4-header">
+                    <div class="skill-profile-details-body">
+                        <div class="skill-profile-details-body1">
                             <p>
-                                Options
+                                breed:
+                            </p>
+                            <p>
+                                icelandic
                             </p>
                         </div>
-
-                        <div class="skill-rating4-body skill-rating4-body1 ">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
-                            <p class="skill-rating4-body-bar skill-rating4-body1-bar ">
-                                Everyone can ride
+                        <div class="skill-profile-details-body2">
+                            <p>
+                                age:
+                            </p>
+                            <p>
+                                445
                             </p>
                         </div>
+                    </div>
+                </div>
+                <img src="./assets/images/hayvan-mobi1.png" alt="creature" height="100px" width="100px">
+            </div>
 
-                        <div class="skill-rating4-body skill-rating4-body2 ">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
-                            <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
+            <hr class="skill-short1"/>
+
+
+            <div class="skill-rating">
+                <div class="skill-rating1-header">
+                    <p>
+                        Rarity
+                    </p>
+                </div>
+                <div class="skill-rating1-body">
+                    <img src="./assets/images/create-group/base/08.gif" alt="Rarity" height="50px" width="50px">
+                    <p>
+                        Super Rare
+                    </p>
+                </div>
+
+                <div class="skill-rating2-header">
+                    <p>
+                        Level
+                    </p>
+                </div>
+                <div class="skill-rating2-body">
+                    <p class="skill-rating2-body-p1">
+                        20/20
+                    </p>
+                    <p class="skill-rating2-body-p2">
+                        Scratched: 9903
+                    </p>
+                </div>
+
+                <div class="skill-rating3">
+                    <p class="skill-rating3-header">
+                        Skills
+                    </p>
+                    <div class="skill-rating3-body skill-rating3-body1 ">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
+                        <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
+                            <span class="skill-rating3-body-bar-span skill-rating3-body1-bar-span "></span>
                         </div>
-
                     </div>
                     
-
-
+                    <div class="skill-rating3-body skill-rating3-body1 ">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
+                        <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
+                            <span class="skill-rating3-body-bar-span skill-rating3-body2-bar-span "></span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-rating3-body skill-rating3-body1 ">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
+                        <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
+                            <span class="skill-rating3-body-bar-span skill-rating3-body3-bar-span "></span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-rating3-body skill-rating3-body1 ">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="40px" width="40px">
+                        <div class="skill-rating3-body-bar skill-rating3-body1-bar ">
+                            <span class="skill-rating3-body-bar-span skill-rating3-body4-bar-span "></span>
+                        </div>
+                    </div>                     
 
 
 
                 </div>
 
-                <div class="fade fade-bottom">
+
+                <hr class="skill-short2"/>
+
+
+                <div class="skill-rating4">
+                    <div class="skill-rating4-header">
+                        <p>
+                            Options
+                        </p>
+                    </div>
+
+                    <div class="skill-rating4-body skill-rating4-body1 ">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
+                        <p class="skill-rating4-body-bar skill-rating4-body1-bar ">
+                            Everyone can ride
+                        </p>
+                    </div>
+
+                    <div class="skill-rating4-body skill-rating4-body2 ">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
+                        <img src="./assets/images/emojiBox.png" alt="face" height="45px" width="45px">
+                    </div>
 
                 </div>
+                
+
+
+
+
+
+            </div>
+
+            <div class="fade fade-bottom">
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                    -                                    -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                         CHAT HISTORY - SIDE BAR                         -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                    -                                    -->
+        <!-- ----------------------------------------------------------------------- -->
+
+
+
+
+        <div class="chat-history sidebar" id="chat-history-sidebar">
+            <div class="fade fade-top">
+
+            </div>
+            <button class="close-sidebar" id="close-chat-history-sidebar">x</button>
+            <h2>
+                CHAT HISTORY
+            </h2>
+            <div class="chat-history-sidebar-chats">
+                <div class="chat-history-sidebar-chat">
+                    <div class="chat-history-sidebar-chat1">
+                        <p>
+                            user:
+                        </p>
+                    </div>
+                    <div class="chat-history-sidebar-chat2">
+                        <p>
+                            freefall'n yah freefall'n
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="chat-history-sidebar-chat">
+                    <div class="chat-history-sidebar-chat1">
+                        <p>
+                            user2:
+                        </p>
+                    </div>
+                    <div class="chat-history-sidebar-chat2">
+                        <p>
+                            What's that? I have no idea what the heck you're saying
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="chat-history-sidebar-chat">
+                    <div class="chat-history-sidebar-chat1">
+                        <p>
+                            user:
+                        </p>
+                    </div>
+                    <div class="chat-history-sidebar-chat2">
+                        <p>
+                            it's an old song
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="chat-history-sidebar-chat">
+                    <div class="chat-history-sidebar-chat1">
+                        <p>
+                            user2:
+                        </p>
+                    </div>
+                    <div class="chat-history-sidebar-chat2">
+                        <p>
+                            ...ok
+                        </p>
+                    </div>
+                </div>
+                
+
 
 
             </div>
 
         </div>
 
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                    -                                    -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                            ACTIONS - SIDEBAR                            -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                    -                                    -->
+        <!-- ----------------------------------------------------------------------- -->
+
+
+        <div class="action sidebar" id="actions-sidebar">
+            <div class="fade fade-top fade-actions">
+
+            </div>
+            <button class="close-sidebar" id="close-actions-sidebar">x</button>
+            <h2>
+                ACTIONS
+            </h2>
+            <div class="action-sidebar-actions">
+                <button class="action-sidebar-action">
+                    <p>Idle</p>
+                </button>
+                
+                <button class="action-sidebar-action">
+                    <p>Wave</p>
+                </button>
+                
+                <button class="action-sidebar-action">
+                    <p>Laugh</p>
+                </button>
+                
+                <button class="action-sidebar-action">
+                    <p>Sit</p>
+                </button>
+                
+                <button class="action-sidebar-action">
+                    <p>Respect</p>
+                </button>
+                
+                <button class="action-sidebar-action">
+                    <p>Blow Kiss</p>
+                </button>
+                
+                <button class="sign-action-sidebar-action" id="sign-action-sidebar-action">
+                    <p>Sign</p>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="action sign-actions sidebar" id="sign-actions">
+            <button class="action-sidebar-action">
+                <p>0</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>1</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>2</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>3</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>4</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>5</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>6</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>7</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>8</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>9</p>
+            </button>
+            
+            <button class="action-sidebar-action">
+                <p>10</p>
+            </button>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
+    <script src="./js/index.js"></script>
+
 </body>
 </html>
