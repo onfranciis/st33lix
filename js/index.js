@@ -17,6 +17,7 @@ const close_chat_history_sidebar = document.getElementById('close-chat-history-s
 
 const loudness = document.getElementById('loudness-icon')
 const loudness_sidebar = document.getElementById('loudness-sidebar')
+const loudness_sidebar_bar = document.getElementsByClassName('loudness-sidebar-bar')
 const close_loudness_sidebar = document.getElementById('close-loudness-sidebar')
 
 const actions = document.getElementById('actions-icon')
@@ -66,6 +67,15 @@ loudness.addEventListener('click', function(){
 close_loudness_sidebar.addEventListener('click', function(){
     loudness_sidebar.style = 'transition: height 0.4s; height: 0';
 })
+
+for (let i = 0; i < loudness_sidebar_bar.length; i++) {
+    loudness_sidebar_bar[i].addEventListener('click', ()=>{
+
+    loudness_sidebar.style = 'transition: height 0.4s; height: 0';
+        
+    })
+    
+}
 
 
 actions.addEventListener('click', function(){
