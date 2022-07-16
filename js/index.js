@@ -1,4 +1,12 @@
-//Capture the sidebars
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                              CAPTURE SIDEBARS                              */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                      -                                     */
+/* -------------------------------------------------------------------------- */
 const duck = document.getElementById('duck-icon')
 const skills_sidebar = document.getElementById('skillsSidebar')
 const close_skills_sidebar = document.getElementById('close-skills-sidebar')
@@ -17,6 +25,11 @@ const close_actions_sidebar = document.getElementById('close-actions-sidebar')
 const sign_actions = document.getElementById('sign-actions')
 const sign_action_sidebar_action = document.getElementById('sign-action-sidebar-action')
 const action_sidebar_action = document.getElementsByClassName('action-sidebar-action')
+
+const avatar = document.getElementById('avatar-icon')
+const avatar_sidebar = document.getElementById('avatar-sidebar')
+const avatar_parent = document.getElementById('avatar-parent')
+const close_avatar_sidebar = document.getElementById('close-avatar-sidebar')
 
 /* -------------------------------------------------------------------------- */
 /*                                      -                                     */
@@ -64,6 +77,7 @@ close_actions_sidebar.addEventListener('click', function(){
     sign_actions.style = 'width: 0';
 })
 
+
 sign_action_sidebar_action.addEventListener('click', function(){
     sign_actions.style = 'width: fit-content';
 })
@@ -75,3 +89,19 @@ for (let i = 0; i < action_sidebar_action.length; i++) {
     })
     
 }
+
+
+avatar.addEventListener('click', function(){
+    avatar_sidebar.style = 'width: 470px';
+    avatar_parent.style = 'width: 100vw'
+})
+
+close_avatar_sidebar.addEventListener('click', function(){
+    avatar_sidebar.style = 'width: 0; padding: 0;';
+    avatar_parent.style = 'width: 0'
+})
+
+// avatar_parent.addEventListener('click', function(){
+//     avatar_sidebar.style = 'width: 0; padding: 0;';
+//     avatar_parent.style = 'width: 0'
+// })

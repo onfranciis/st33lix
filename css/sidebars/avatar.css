@@ -1,7 +1,7 @@
 .avatar-parent{
     height: 100vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,13 +14,26 @@
     background-color: red;
 }
 
-.avatar{
-    position: absolute;
-    padding: 0 35px 150px;
+.avatar-sidebar{
+    border-radius: 0 15px 15px 0;
+    transition: width 0.3s;
+    direction: rtl;
+    padding: 0 0 150px;
 }
 
-.avatar .fade{
+#close-avatar-sidebar{
+    top: 15px;
+    left: 20px;
+}
+
+.avatar-sidebar hr{
+    border-color: teal;
+}
+
+.fade-avatar{
     height: 50px;
+    position: static;
+    margin-bottom: 0px;
 }
 
 .avatar-section1{
@@ -28,6 +41,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    direction: ltr;
+    padding: 0 35px;
 }
 
 .avatar-section1 p{
@@ -38,7 +53,8 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    padding: 15px 0;
+    direction: ltr;
+    padding: 15px 35px;
 
 }
 
@@ -88,7 +104,7 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
-
+    
 }
 
 .avatar-section2-21221{
@@ -99,7 +115,7 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
-
+    margin-bottom: 20px;
 }
 
 .avatar-section2-21231{
@@ -153,6 +169,8 @@
 .avatar-section3{
     display: flex;
     flex-direction: column;
+    direction: ltr;
+    padding: 0 35px;
 }
 
 .avatar-section3-1{
@@ -193,6 +211,8 @@
 .avatar-section4{
     display: flex;
     flex-direction: column;
+    direction: ltr;
+    padding: 0 35px;
 }
 
 .avatar-section4-1{
