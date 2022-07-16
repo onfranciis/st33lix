@@ -1,5 +1,22 @@
-.avatar{
+.avatar-parent{
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
 
+.avatar-parent-close{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.avatar{
+    position: absolute;
+    padding: 0 35px 150px;
 }
 
 .avatar .fade{
@@ -11,7 +28,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
 }
 
 .avatar-section1 p{
@@ -22,13 +38,13 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding: 15px 0;
 
 }
 
 .avatar-section2-1{
     display: flex;
     flex-direction: row;
-    padding: 0 5px;
 
 }
 
@@ -43,11 +59,15 @@
     background-color: transparent;
     display: flex;
     flex-direction: row;
+    gap: 5px;
 
 }
 
 .avatar-section2-211{
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -56,7 +76,7 @@
     font-size: 17px;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 5px 0 0;
 
 }
 
@@ -84,4 +104,128 @@
 
 .avatar-section2-21231{
     font-weight: bold;
+}
+
+.avatar-section2-2124{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.avatar-section2-21241{
+
+}
+
+.avatar-section2-212411{
+    font-weight: bold;
+
+}
+
+.avatar-section2-212412{
+
+}
+
+.avatar-section2-21242{
+
+}
+
+.avatar-section2-2125{
+    margin: 20px 0 0;
+
+}
+
+.avatar-section2-21251{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.avatar-section2-212511{
+    font-weight: bold;
+
+}
+
+.avatar-section2-212512{
+    
+}
+
+.avatar-section3{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-section3-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.avatar-section3-11{
+    font-weight: bold;
+}
+
+.avatar-section3-12{
+    
+}
+
+.avatar-section3-2{
+    border-top: 2px solid teal;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin-right: 60px;
+}
+
+.avatar-section3-2 img{
+    border-radius: 50%;
+    transition: transform 0s;
+    margin: 5px;
+}
+
+.avatar-section3-2 img:hover{
+    transform: rotateZ(360deg);
+    transition: transform 0.5s;
+}
+
+.avatar-section4{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-section4-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.avatar-section4-11{
+    font-weight: bold;
+}
+
+.avatar-section4-12{
+    
+}
+
+.avatar-section4-2{
+    border-top: 2px solid teal;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin-right: 0px;
+}
+
+.avatar-section4-2 img{
+    border-radius: 15px;
+    transition: transform 0s;
+    margin: 5px;
+}
+
+.avatar-section4-2 img:hover{
+    transform: rotateZ(360deg);
+    transition: transform 0.5s;
 }
