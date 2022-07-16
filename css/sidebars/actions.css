@@ -1,5 +1,5 @@
 .action{
-    height: 320px;
+    height: 0;
     width: 150px;
     background-color: rgba(0, 0, 0, 0.967);
     border-radius: 15px;
@@ -60,7 +60,7 @@
 
 .sign-actions{
     height: fit-content;
-    width: fit-content;
+    width: 0;
     /* background-color: red; */
     position: absolute;
     top: 0%;
