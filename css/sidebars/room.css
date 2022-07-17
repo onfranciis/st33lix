@@ -2,16 +2,24 @@
     width: 400px;
     display: flex;
     flex-direction: column;
+    border-radius: 0 15px 15px 0;
+    direction: rtl;
+    padding: 0;
+}
+
+.room-sidebar div{
+    direction: ltr;
 }
 
 .fade-room{
     height: 45px;
+    margin: 0;
 }
 
 .hr-room{
     width: 80%;
     border-color: teal;
-    margin: 0 0 20px 40px;
+    margin: 0 40px 20px 0px;
 
 }
 
@@ -21,6 +29,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    margin-top: 50px;
     
 }
 
@@ -56,7 +65,7 @@
 }
 
 .room-section2-12{
-    color: teal;
+    color: rgb(25, 225, 225);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,7 +113,7 @@
 
 .room-section2-tags{
     background-color: rgba(0, 128, 128, 0.284);
-    color: teal;
+    color: rgb(25, 225, 225);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -115,7 +124,7 @@
 .room-section3{
     display: flex;
     flex-direction: column;
-
+    padding-bottom: 70px;
 }
 
 .room-section3-1{
@@ -143,7 +152,7 @@
 .room-section3-section{
     width: 85%;
     background-color: rgba(0, 128, 128, 0.284);
-    color: teal;
+    color: rgb(25, 225, 225);
     text-align: left;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -155,6 +164,12 @@
 
 .room-section3-section:hover{
     border: 2px solid teal;
+}
+
+.room-section4{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .room-section4-1{
@@ -182,7 +197,94 @@
 .room-section4-section{
     width: 85%;
     background-color: rgba(0, 128, 128, 0.284);
+    color: rgb(25, 225, 225);
+    font-size: 15px;
+    text-align: left;
+    /* border: 2px solid transparent; */
+    border: none;
+    border-left: 2px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    cursor: pointer;
+    padding: 3px 5px;
+    margin: 2px 5px;
+    
+}
+
+.room-section4-section:hover{
+    border-left: 2px solid teal;
+    border-radius: 0 5px 5px 0;
+}
+
+.room-section4-section1{
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.room-section4-section1-parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.room-section4-section2{
+}
+
+.section4-3{
+    padding: 10px 30px;
+}
+
+.section4-31{
+    background-color: transparent;
     color: teal;
+    font-size: 15px;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section4-31:hover{
+    text-shadow: 0 0 1px teal;
+}
+
+.room-section5{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+.room-section5-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.room-section5-11{
+    font-weight: bold;
+}
+
+.room-section5-12{
+
+}
+
+.room-section5-2{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+
+}
+
+.room-section5-section{
+    width: 85%;
+    background-color: rgba(0, 128, 128, 0.284);
+    color: rgb(25, 225, 225);
     text-align: left;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -192,14 +294,23 @@
     
 }
 
-.room-section4-section:hover{
+.room-section5-section:hover{
     border: 2px solid teal;
 }
 
-.room-section4-section1{
-
+.section5-3{
+    padding: 10px 30px;
 }
 
-.room-section4-section2{
-    
+.section5-31{
+    background-color: transparent;
+    color: teal;
+    font-size: 15px;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section5-31:hover{
+    text-shadow: 0 0 1px teal;
 }
