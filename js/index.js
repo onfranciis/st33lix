@@ -47,7 +47,7 @@ const close_room_sidebar = document.getElementById('close-room-sidebar')
 /* -------------------------------------------------------------------------- */
 
 duck.addEventListener('click', function(){
-    skills_sidebar.style = 'width: 470px';
+    skills_sidebar.style = 'width: 460px';
 })
 
 close_skills_sidebar.addEventListener('click', function(){

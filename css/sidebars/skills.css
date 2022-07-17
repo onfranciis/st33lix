@@ -1,6 +1,6 @@
 .sidebar{
     height: 100%;
-    width: 470px;
+    width: 460px;
     background-color: rgba(0, 0, 0, 0.92);
     position: fixed;
     overflow: scroll;
@@ -31,7 +31,7 @@
     height: 30px;
     background-color: red;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     border-radius: 5px;
     border: none;
@@ -278,6 +278,12 @@
     margin: 5px 0;
 }
 
+.skill-rating4-body1{
+    align-self: flex-start;
+    padding: 10px;
+
+}
+
 .skill-rating4-body img{
     border-radius: 50%;
 }
@@ -287,7 +293,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
     margin: 5px 0;
 }
