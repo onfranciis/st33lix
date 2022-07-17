@@ -32,6 +32,10 @@ const avatar_sidebar = document.getElementById('avatar-sidebar')
 const avatar_parent = document.getElementById('avatar-parent')
 const close_avatar_sidebar = document.getElementById('close-avatar-sidebar')
 
+const room = document.getElementById('people-icon')
+const room_sidebar = document.getElementById('room-sidebar')
+const close_room_sidebar = document.getElementById('close-room-sidebar')
+
 /* -------------------------------------------------------------------------- */
 /*                                      -                                     */
 /* -------------------------------------------------------------------------- */
@@ -51,6 +55,8 @@ close_skills_sidebar.addEventListener('click', function(){
 })
 
 
+
+
 message.addEventListener('click', function(){
     chat_history_sidebar.style = 'width: 400px';
 })
@@ -58,6 +64,8 @@ message.addEventListener('click', function(){
 close_chat_history_sidebar.addEventListener('click', function(){
     chat_history_sidebar.style = 'width: 0';
 })
+
+
 
 
 loudness.addEventListener('click', function(){
@@ -78,6 +86,8 @@ for (let i = 0; i < loudness_sidebar_bar.length; i++) {
 }
 
 
+
+
 actions.addEventListener('click', function(){
     actions_sidebar.style = 'height: 320px';
 })
@@ -86,6 +96,8 @@ close_actions_sidebar.addEventListener('click', function(){
     actions_sidebar.style = 'height: 0';
     sign_actions.style = 'width: 0';
 })
+
+
 
 
 sign_action_sidebar_action.addEventListener('click', function(){
@@ -99,6 +111,8 @@ for (let i = 0; i < action_sidebar_action.length; i++) {
     })
     
 }
+
+
 
 
 avatar.addEventListener('click', function(){
@@ -115,3 +129,18 @@ close_avatar_sidebar.addEventListener('click', function(){
 //     avatar_sidebar.style = 'width: 0; padding: 0;';
 //     avatar_parent.style = 'width: 0'
 // })
+
+
+
+
+
+
+
+
+room.addEventListener('click', function(){
+    room_sidebar.style = 'width: 400px';
+})
+
+close_room_sidebar.addEventListener('click', function(){
+    room_sidebar.style = 'width: 0; padding: 0;';
+})
