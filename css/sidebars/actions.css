@@ -22,6 +22,8 @@
 }
 
 .action-sidebar-actions{
+    /* width: 0; */
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -68,6 +70,7 @@
     transition: width 5s;
     padding: 5px 0;
     margin: 190px 0px 0 155px;
+    display: none;
 }
 
 .sign-actions .action-sidebar-action{
