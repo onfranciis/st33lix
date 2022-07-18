@@ -145,8 +145,8 @@
 }
 
 .room-section3-2{
-    background-color: #fff;
-    height: 20px;
+    /* background-color: #fff; */
+    /* height: 20px; */
     display: flex;
     flex-direction: column;
     overflow: hidden;

@@ -1,5 +1,5 @@
 .chat-style-sidebar{
-    height: 300px;
+    height: 0;
     width: 450px;
     /* background-color: #fff; */
     border-radius: 15px;
@@ -7,7 +7,7 @@
     bottom: 5px;
     left: -60px;
     transition: height 0.5s;
-    overflow: auto;
+    overflow: hidden;
     padding: 0;
     margin: 50px;
 }
@@ -72,9 +72,10 @@
 }
 
 .chat-style-section2{
+    height: 250px;
     width: 100%;
     overflow: auto;
-    padding: 50px 0;
+    padding: 20px 0 80px 0;
 }
 
 .chat-style-section2-1{
