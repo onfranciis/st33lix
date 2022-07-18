@@ -35,6 +35,8 @@ const close_avatar_sidebar = document.getElementById('close-avatar-sidebar')
 const room = document.getElementById('people-icon')
 const room_sidebar = document.getElementById('room-sidebar')
 const close_room_sidebar = document.getElementById('close-room-sidebar')
+const room_settings_icon = document.getElementById('room-settings-dropdown-icon');
+const room_settings = document.getElementById('room-settings')
 
 /* -------------------------------------------------------------------------- */
 /*                                      -                                     */
@@ -144,3 +146,30 @@ room.addEventListener('click', function(){
 close_room_sidebar.addEventListener('click', function(){
     room_sidebar.style = 'width: 0; padding: 0;';
 })
+
+// room_settings_icon.addEventListener('click', function(){
+//    if (room_settings.style.height = '0') {
+//         room_settings.style = 'height: 20px'
+//         console.log('height = fit-content');
+//     }else{
+//         room_settings.style = 'height: 0'
+//         console.log('height = 0');
+        
+//     }
+// })
+
+
+
+    if (room_settings.style.height = '0px'){
+        room_settings_icon.addEventListener('click', function(){
+            room_settings.style = 'height: 20px'
+            console.log('height = fit-content');})
+     }if(room_settings.style.height = 'fit-content'){
+        room_settings_icon.addEventListener('click', function(){
+            room_settings.style = 'height: 0'
+            console.log('height = 0');})
+         
+     }
+ 
+    console.log(room_settings.style.height);
+    

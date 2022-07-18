@@ -1,5 +1,5 @@
 .room-sidebar{
-    width: 0;
+    width: 400px;
     display: flex;
     flex-direction: column;
     border-radius: 0 15px 15px 0;
@@ -145,9 +145,12 @@
 }
 
 .room-section3-2{
+    background-color: #fff;
+    height: 20px;
     display: flex;
     flex-direction: column;
-    padding: 10px 30px;
+    overflow: hidden;
+    padding: 0px 30px;
 
 }
 
