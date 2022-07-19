@@ -1,0 +1,50 @@
+body{
+    height: calc(100vh - 130px);
+    background-color: black;
+    color: crimson;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: help;
+    border: 15px solid crimson;
+    padding: 0;
+    padding-top: 100px;
+    margin: 0;
+    /* animation: glow 1s linear 0s infinite forward; */
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    margin: auto;
+}
+
+p:nth-child(2){
+    font-size: 5rem;
+}
+
+@keyframes glow {
+    0%{
+        color: crimson;
+        border-color: crimson;
+    }
+    50%{
+        color: blue;
+        border-color: blue;
+    }
+}
